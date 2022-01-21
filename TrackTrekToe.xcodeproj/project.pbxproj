@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15CE6436279AB0A900D9F816 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE6435279AB0A900D9F816 /* Tip.swift */; };
+		15CE6438279AB23800D9F816 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE6437279AB23800D9F816 /* TipsView.swift */; };
 		15FCBF8E2799699F008680CD /* TrackTrekToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FCBF8D2799699F008680CD /* TrackTrekToeApp.swift */; };
 		15FCBF902799699F008680CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FCBF8F2799699F008680CD /* ContentView.swift */; };
 		15FCBF92279969A3008680CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FCBF91279969A3008680CD /* Assets.xcassets */; };
 		15FCBF95279969A3008680CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FCBF94279969A3008680CD /* Preview Assets.xcassets */; };
+		15FCBF9D279970AB008680CD /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 15FCBF9B279970AB008680CD /* locations.json */; };
+		15FCBF9E279970AB008680CD /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = 15FCBF9C279970AB008680CD /* tips.json */; };
+		15FCBFA02799B70F008680CD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FCBF9F2799B70F008680CD /* Location.swift */; };
+		15FCBFA22799BC1D008680CD /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FCBFA12799BC1D008680CD /* Locations.swift */; };
+		15FCBFA42799C660008680CD /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FCBFA32799C660008680CD /* WorldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15CE6435279AB0A900D9F816 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		15CE6437279AB23800D9F816 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		15FCBF8A2799699F008680CD /* TrackTrekToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackTrekToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15FCBF8D2799699F008680CD /* TrackTrekToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTrekToeApp.swift; sourceTree = "<group>"; };
 		15FCBF8F2799699F008680CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15FCBF91279969A3008680CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15FCBF94279969A3008680CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15FCBF9B279970AB008680CD /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		15FCBF9C279970AB008680CD /* tips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tips.json; sourceTree = "<group>"; };
+		15FCBF9F2799B70F008680CD /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		15FCBFA12799BC1D008680CD /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		15FCBFA32799C660008680CD /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,15 @@
 			isa = PBXGroup;
 			children = (
 				15FCBF8D2799699F008680CD /* TrackTrekToeApp.swift */,
+				15FCBFA32799C660008680CD /* WorldView.swift */,
+				15CE6435279AB0A900D9F816 /* Tip.swift */,
+				15CE6437279AB23800D9F816 /* TipsView.swift */,
 				15FCBF8F2799699F008680CD /* ContentView.swift */,
+				15FCBFA12799BC1D008680CD /* Locations.swift */,
+				15FCBF9F2799B70F008680CD /* Location.swift */,
 				15FCBF91279969A3008680CD /* Assets.xcassets */,
+				15FCBF9B279970AB008680CD /* locations.json */,
+				15FCBF9C279970AB008680CD /* tips.json */,
 				15FCBF93279969A3008680CD /* Preview Content */,
 			);
 			path = TrackTrekToe;
@@ -126,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15FCBF95279969A3008680CD /* Preview Assets.xcassets in Resources */,
+				15FCBF9E279970AB008680CD /* tips.json in Resources */,
+				15FCBF9D279970AB008680CD /* locations.json in Resources */,
 				15FCBF92279969A3008680CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15FCBF902799699F008680CD /* ContentView.swift in Sources */,
+				15FCBFA02799B70F008680CD /* Location.swift in Sources */,
+				15FCBFA42799C660008680CD /* WorldView.swift in Sources */,
+				15CE6436279AB0A900D9F816 /* Tip.swift in Sources */,
+				15CE6438279AB23800D9F816 /* TipsView.swift in Sources */,
+				15FCBFA22799BC1D008680CD /* Locations.swift in Sources */,
 				15FCBF8E2799699F008680CD /* TrackTrekToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
